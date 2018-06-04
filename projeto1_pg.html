@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+        <title>Projeto 1</title>
+        <script type="text/javascript" src="BSpline.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <h1>BSpline Curve Playground</h1>
+        <form name="fm">
+            &nbsp;
+            <input type="button" onClick="ptsClear();" value="Clear All Points">
+        </form>
+	    <table>
+	    	<tbody>
+		    	<tr>   	
+			       	<td>
+			        	<canvas id="c1" width="700" height="400" style="border: solid 5px;"></canvas><br>
+			    	</td>
+			    	<td>
+			    		<input type="radio" name="c1" onclick="radio = 'move';" checked="">Move Point<br>
+			    		<input type="radio" name="c1" onclick="radio = 'add';" checked="">Add Point<br>
+			    		<input type="radio" name="c1" onclick="radio = 'delete';" checked="">Delete Point<br>
+			    	</td>
+		    	</tr>
+	    	</tbody>	
+	    </table>
+    </body>
+</html>
