@@ -7,7 +7,7 @@ var dragId = -1, isMouseDown = false;
 window.addEventListener("load",function(){
     canv = document.getElementById("c1");
     ctx = canv.getContext("2d");
-    // canv.addEventListener("mousedown",putpoint,false);
+    canv.addEventListener("mousedown",putpoint,false);
     canv.addEventListener('mousemove', drag, false);
     canv.addEventListener('touchmove', drag, false);
     // canv.addEventListener('mousedown', start_drag, false);
