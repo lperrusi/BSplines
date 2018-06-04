@@ -75,19 +75,17 @@ function deletepoint(e){
     var rect = e.target.getBoundingClientRect();
     var x = e.clientX - rect.left;
     var y = e.clientY - rect.top;;
-    conole.log(pts.length);
     var margem = 10;
     for(var i = 0; i<pts.length; i++){
         var point = pts[i];
-        // console.log(point[0]);
-        // console.log(x);
-        if(x== point[0] || x <= (point[0]+10)){
-            if(y== point[1] || y <= (point[1]+10)){
-            console.log("oi");
-                
+        if((x >= point[0]) && (x <= (point[0]+10))) {
+            if((y>= point[1]) && (y <= (point[1]+10))){
+                pts.splice(i,1);
+                break;
             }
         }
     }
+    redraw();
 }
 
 function drag(ev){
